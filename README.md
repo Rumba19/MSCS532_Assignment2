@@ -50,4 +50,3 @@ The algorithms were tested on datasets of varying sizes and structures:
 ---
 This project was inspired by standard implementations of Quick Sort and Merge Sort from GeeksforGeeks and Python's official documentation.
 
-## **Project Structure**

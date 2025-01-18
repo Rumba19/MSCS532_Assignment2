@@ -1,4 +1,8 @@
 # Merge Sort Implementation
+import random
+import time
+
+
 def merge_sort(arr):
     # Base case: If the array has 1 or no elements, it's already sorted
     if len(arr) <= 1:
@@ -53,8 +57,16 @@ if __name__ == "__main__":
     data = [28, 17, 33, 6, 8, 52, 20]
     unsorted = f"Unsorted array = {data}"
     print(unsorted)
-    sorted_data = merge_sort(data)
-    merge_sorted_array = f"Sorted array using Merge sort = {sorted_data}"
-    sorted_data = quick_sort(data)
-    quick_sorted_array = f"Sorted array using quick Sort = {sorted_data}"
-    print(merge_sorted_array, quick_sorted_array)
+     # Merge Sort
+    start = time.time()
+    merge_sorted_data = merge_sort(data)
+    end = time.time()
+    merge_sorted_array = f" Merge sorted = {merge_sorted_data}, Time: {end - start:.6f}s"
+    print(merge_sorted_array)
+     
+     # Quick Sort
+    start = time.time()
+    quick_sorted_data = quick_sort(data)
+    end = time.time()
+    quick_sorted_array = f"Sorted array using quick Sort = {quick_sorted_data},Time: {end - start:.6f}s"
+    print(quick_sorted_array)

@@ -1,5 +1,4 @@
 # Merge Sort Implementation
-import random
 import time
 
 
